@@ -1,0 +1,149 @@
+@import"style.css";
+
+.container-slider {
+  width: 100%;
+  margin-top: 10em;
+  margin-bottom: 1em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  box-shadow: 1px 2px 3px #ebe6e6 ;
+}
+
+.slider {
+  max-width: 100em;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.slider img{
+  max-width: 97em;
+  max-height: 50em;
+}
+
+.arrow {
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  text-align: center;
+  height: 4em;
+  line-height: 4em;
+  color: hsla(0, 3%, 17%, 0.822);
+  border-radius: 4px;
+  background-color: hsla(0, 20%, 95%, 0.589);
+}
+.arrow i{
+  width: 2.5em;
+  font-size: 2em;
+}
+.arrow:hover{
+  background: #9b979723;
+  color: var(--text-color-1) !important;
+}
+.l {
+ left: 5em;
+ position: absolute;
+}
+.r {
+  right: 5em;
+  position: absolute;
+}
+
+@media (max-width:991px) {
+
+  html{
+    font-size: 55%;
+}
+  .container-slider{
+    position: relative;
+    display: flex;
+  }
+  .slider{
+    max-width: 100em;
+    margin: 0;
+  }
+  .slider img{
+    max-width: 95em;
+    max-height: 35em;
+  }
+  .arrow{
+    position: absolute;
+    z-index: 100;
+    margin-top: 2em;
+    font-size: 2.2em;
+    text-align: center;
+    top: 30%;
+  }
+  .arrow i{
+    text-align: center;
+  }
+  .l{
+    left: 1em;
+  }
+  .r{
+    right: 1em;
+  }
+
+}
+
+
+@media (max-width:768px) {
+  html{
+    font-size: 40%;
+}
+  .slider{
+    max-width: 90em;
+  }
+  .arrow {
+    line-height: 2.5em;
+    height: 2.5em;
+    font-size: 1.6em;
+  }
+
+  .arrow i{
+    max-width: 2em;
+  }
+
+  .slider img{
+    max-width: 75em;
+    max-height: 34em;
+  }
+}
+
+@media (max-width:450px) {
+
+  html{
+    font-size: 30%;
+}
+
+  .slider{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  .slider img{
+    width: 100%;
+    max-height: 40em;
+  }
+  .arrow{
+    position: absolute;
+    z-index: 100;
+    margin-top: 2em;
+    line-height: 3em;
+  }
+  .l{
+    left: 2em;
+  }
+  .r{
+    right: 2em;
+  }
+  .arrow i{
+    text-align: center;
+  }
+
+}

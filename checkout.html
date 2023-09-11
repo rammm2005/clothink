@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/logo.jpg" sizes="16x16">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="" method="POST">
+
+            <div class="payment-cart">
+
+                <div class="payment">
+
+                    <h3 class="title">billing address</h3>
+
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text" placeholder="Rama ZZZ">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text" placeholder="jalan Rjawali no:3">
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text" placeholder="Denpasar">
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>promo code :</span>
+                            <input type="number" placeholder="09876">
+                        </div>
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="payment">
+
+                    <h3 class="title">payment</h3>
+
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="images/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="Rama">
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="111-222-999-0900">
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month : </span>
+                        <input type="datetime-local" name="" id="">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2022">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <input type="submit" value="proceed to checkout" id="submit-btn">
+            <a href="shop.html">Continued Shooping ></a>
+
+        </form>
+
+
+        <div class="cart-product">
+            <div class="header-cart">
+                <div class="heading">PRODUCT CART</div>
+                <button class="delete" type="submit"><i class="fa fa-trash" aria-hidden="true"></i>Delete All</button>
+            </div>
+
+            <div class="cart-item">
+                <div class="img-cart">
+                    <a href="detail-t-shirt.html"><img src="images/baju nike.jpg" /></a>
+                </div>
+                <div class="des">
+                    <h1 class="title">Nike Cloch</h1>
+                    <select name="" id="">
+                        <option value="">Select Size</option>
+                        <option value="">XL (Size)</option>
+                        <option value="">XXL (Size)</option>
+                        <option value="">L (Size)</option>
+                        <option value="">M (Size)</option>
+                    </select>
+                </div>
+                <input type="number" class="count" name="" value="1" id="" minlength="0">
+                <div class="prices">
+                    <div class="amount">Rp.200,000-</div>
+                    <div class="save"><u>Save for later</u></div>
+                    <div class="remove"><u><i class="fa fa-trash" aria-hidden="true"></i> Cart</u></div>
+                </div>
+
+            </div>
+
+
+            <div class="cart-item">
+                <div class="img-cart">
+                    <a href="detail-outer.html"><img src="images/outer 10.jpg" /></a>
+                </div>
+                <div class="des">
+                    <h1 class="title">Outer Cloch</h1>
+                    <select name="" id="">
+                        <option value="">Select Size</option>
+                        <option value="">XL (Size)</option>
+                        <option value="">XXL (Size)</option>
+                        <option value="">L (Size)</option>
+                        <option value="">M (Size)</option>
+                    </select>
+                </div>
+                <input type="number" class="count" name="" value="2" id="" minlength="0">
+                <div class="prices">
+                    <div class="amount">Rp.400,000-</div>
+                    <div class="save"><u>Save for later</u></div>
+                    <div class="remove"><u><i class="fa fa-trash" aria-hidden="true"></i> Cart</u></div>
+                </div>
+
+            </div>
+
+
+
+            <div class="cart-item">
+                <div class="img-cart">
+                    <a href="long-sleeved shirt-detail.html"><img src="images/kemeja4.jpg"/></a>
+                </div>
+                <div class="des">
+                    <h1 class="title">long-sleeved </h1>
+                    <select name="" id="">
+                        <option value="">Select Size</option>
+                        <option value="">XL (Size)</option>
+                        <option value="">XXL (Size)</option>
+                        <option value="">L (Size)</option>
+                        <option value="">M (Size)</option>
+                    </select>
+                </div>
+                <input type="number" class="count" name="" value="3" id="" minlength="0">
+                <div class="prices">
+                    <div class="amount">Rp.100,000-</div>
+                    <div class="save"><u>Save for later</u></div>
+                    <div class="remove"><u><i class="fa fa-trash" aria-hidden="true"></i> Cart</u></div>
+                </div>
+
+            </div>
+
+
+
+            <!-- TOTAL -->
+            <div class="total" style="padding-bottom: 2em;">
+                <h4 class="total-amount">Subtotal :<span> Rp. 700,000-</span></h4>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
